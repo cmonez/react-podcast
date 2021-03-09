@@ -8,7 +8,7 @@ const db = mongoose
     useFindAndModify: false,
     useCreateIndex: true,
   })
-  .then(() => console.log('Connected to mongo!'))
+  .then(() => console.log('Connected to mongo database!!'))
   .catch((error) => console.log('Error connecting here:', error));
 
 module.exports = db;
