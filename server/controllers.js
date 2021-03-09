@@ -3,7 +3,7 @@ const PodcastEpisodes = require('../database/schema');
 
 module.exports = {
   async add(doc) {
-    PodcastEpisodes.insertMany(doc);
+    await PodcastEpisodes.insertMany(doc);
   },
 
   async delete(id) {
