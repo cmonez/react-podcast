@@ -8,21 +8,17 @@ import PlayItem from './styles/PlayItem';
 import Footer from './styles/Footer';
 
 const App = () => {
-  const firstPlay = exampleData[0];
-  const [feed, setFeed] = useState(firstPlay);
+  const [feed, setFeed] = useState(exampleData);
+  const [currentItem, setCurrentItem] = useState(exampleData[0]);
   return (
     <Fragment>
       <GlobalStyle />
       <h2>React Podcasts</h2>
       <Container>
         <MainPlayer />
-        <PlayItem />
-        <PlayItem />
-        <PlayItem />
-        <PlayItem />
-        <PlayItem />
-        <PlayItem />
-        <PlayItem />
+        {feed.map((podcast) => {
+          return <PlayItem podcastInfo={podcast} />;
+        })}
       </Container>
       <Footer />
     </Fragment>

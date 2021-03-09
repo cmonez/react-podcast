@@ -21,16 +21,13 @@ const DesCriptionContainer = styled.div`
   font-size: 12px;
 `;
 
-const PlayItem = () => {
-  const [player, setPlayer] = useState(exampleData[1]);
-  const [audio, setAudio] = useState(exampleData[0].attachments[0].url);
-
+const PlayItem = ({ podcastInfo }) => {
   return (
     <ItemDiv>
-      <Image src={exampleData[1].image} />
+      <Image src={podcastInfo.image} />
       <DesCriptionContainer>
-        <div>{player.title}</div>
-        <div>{player.content_text}</div>
+        <div>{podcastInfo.title}</div>
+        <div>{podcastInfo.content_text}</div>
       </DesCriptionContainer>
     </ItemDiv>
   );
