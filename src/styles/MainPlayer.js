@@ -12,7 +12,7 @@ const MainPlayerDiv = styled.div`
 
 const SubSection = styled.div`
   width: 50%;
-  background: orange;
+  background: #9e5bc2;
   overflow: auto;
 `;
 
