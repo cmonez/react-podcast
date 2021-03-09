@@ -5,6 +5,8 @@ import GlobalStyle from './styles/globalstyles';
 import Container from './styles/MainContainer';
 import MainPlayer from './styles/MainPlayer';
 import PlayItem from './styles/PlayItem';
+import Footer from './styles/Footer';
+
 const App = () => {
   const firstPlay = exampleData[0];
   const [feed, setFeed] = useState(firstPlay);
@@ -15,7 +17,14 @@ const App = () => {
       <Container>
         <MainPlayer />
         <PlayItem />
+        <PlayItem />
+        <PlayItem />
+        <PlayItem />
+        <PlayItem />
+        <PlayItem />
+        <PlayItem />
       </Container>
+      <Footer />
     </Fragment>
   );
 };

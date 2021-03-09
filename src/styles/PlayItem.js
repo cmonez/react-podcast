@@ -6,15 +6,19 @@ import exampleData from '../example.js';
 const ItemDiv = styled.div`
   width: 100%;
   margin-top: 10px;
-  height: 20%;
+  height: 150px;
   background: white;
   display: flex;
   flex-direction: row;
 `;
 
 const Image = styled.img`
-  width: 100px;
+  width: 120px;
   border-radius: 50%;
+`;
+
+const DesCriptionContainer = styled.div`
+  font-size: 12px;
 `;
 
 const PlayItem = () => {
@@ -24,10 +28,10 @@ const PlayItem = () => {
   return (
     <ItemDiv>
       <Image src={exampleData[1].image} />
-      <div>
+      <DesCriptionContainer>
         <div>{player.title}</div>
         <div>{player.content_text}</div>
-      </div>
+      </DesCriptionContainer>
     </ItemDiv>
   );
 };
