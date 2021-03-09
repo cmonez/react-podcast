@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const MainPlayerDiv = styled.div`
   width: 100%;
-  height: 40%;
+  height: 50%;
   background-color: pink;
   display: flex;
   flex-direction: row;
@@ -20,7 +20,7 @@ const HeaderImage = styled.div`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  overflow: hidden;
+  /* overflow: hidden; */
   min-width: 100%;
   background-image: url(${exampleData[0].image});
 `;
