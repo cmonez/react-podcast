@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import PlayIcon from './PlayIcon';
 import exampleData from '../example.js';
-
+import Heart from './Heart';
 const ItemDiv = styled.div`
   width: 100%;
   margin-top: 10px;
@@ -28,6 +28,7 @@ const PlayItem = ({ podcastInfo }) => {
       <DesCriptionContainer>
         <div>{podcastInfo.title}</div>
         <div>{podcastInfo.content_text}</div>
+        <Heart />
       </DesCriptionContainer>
     </ItemDiv>
   );
