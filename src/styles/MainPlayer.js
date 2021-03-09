@@ -12,7 +12,16 @@ const MainPlayerDiv = styled.div`
 
 const SubSection = styled.div`
   width: 50%;
-  background: #9e5bc2;
+  background: #bfb1c1;
+  overflow: auto;
+`;
+const ImageSubSection = styled.div`
+  width: 50%;
+  background: #bfb1c1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   overflow: auto;
 `;
 
@@ -26,9 +35,9 @@ const MainPlayer = () => {
 
   return (
     <MainPlayerDiv>
-      <SubSection>
+      <ImageSubSection>
         <Image src={exampleData[0].image} />
-      </SubSection>
+      </ImageSubSection>
       <SubSection>
         Now Playing:
         <h3>{exampleData[0].title}</h3>
