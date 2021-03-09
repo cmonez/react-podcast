@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
+import exampleData from './example.js';
 import ReactDOM from 'react-dom';
+import GlobalStyle from './styles/globalstyles';
 
-function Example() {
+const App = () => {
+  const [feed, setFeed] = useState(exampleData);
   return (
-    <div>
+    <Fragment>
+      <GlobalStyle />
       <h2>React Podcasts</h2>
-    </div>
+    </Fragment>
   );
-}
+};
 
-ReactDOM.render(<Example />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
