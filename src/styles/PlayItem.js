@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import exampleData from '../example.js';
 import styled from 'styled-components';
+import PlayIcon from './PlayIcon';
+import exampleData from '../example.js';
 
 const ItemDiv = styled.div`
   width: 100%;
@@ -9,16 +10,10 @@ const ItemDiv = styled.div`
   background: white;
   display: flex;
   flex-direction: row;
-  border-top: solid black;
-  /* border-bottom: solid black; */
 `;
 
-const picture = exampleData[1].image;
-
-const HeaderImage = styled.div`
+const Image = styled.img`
   width: 100px;
-  height: 100%;
-  background-image: url(${picture});
   border-radius: 50%;
 `;
 
@@ -28,7 +23,7 @@ const PlayItem = () => {
 
   return (
     <ItemDiv>
-      <HeaderImage />
+      <Image src={exampleData[1].image} />
       <div>
         <div>{player.title}</div>
         <div>{player.content_text}</div>
