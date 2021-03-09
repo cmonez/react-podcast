@@ -15,7 +15,7 @@ const App = () => {
       <GlobalStyle />
       <h2>React Podcasts</h2>
       <Container>
-        <MainPlayer />
+        <MainPlayer currentItemPlaying={currentItem} />
         {feed.map((podcast) => {
           return <PlayItem podcastInfo={podcast} />;
         })}
