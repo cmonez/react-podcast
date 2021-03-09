@@ -5,7 +5,9 @@ import styled from 'styled-components';
 let FooterDiv = styled.div`
   position: absolute;
   float: right;
+  color: white;
 `;
+
 const Footer = () => {
   return (
     <FooterDiv>
