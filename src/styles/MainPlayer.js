@@ -16,13 +16,8 @@ const SubSection = styled.div`
   overflow: auto;
 `;
 
-const HeaderImage = styled.div`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* overflow: hidden; */
-  min-width: 100%;
-  background-image: url(${exampleData[0].image});
+const Image = styled.img`
+  width: 90%;
 `;
 
 const MainPlayer = () => {
@@ -32,7 +27,7 @@ const MainPlayer = () => {
   return (
     <MainPlayerDiv>
       <SubSection>
-        <HeaderImage></HeaderImage>
+        <Image src={exampleData[0].image} />
       </SubSection>
       <SubSection>
         Now Playing:
