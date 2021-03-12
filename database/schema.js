@@ -7,6 +7,7 @@ const PodcastEpisodeSchema = new mongoose.Schema({
   date_published: String,
   url: String,
   duration_in_seconds: Number,
+  title: String,
 });
 
 const PodcastEpisode = mongoose.model('PodcastEpisode', PodcastEpisodeSchema);

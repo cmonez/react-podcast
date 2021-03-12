@@ -27,35 +27,32 @@ app.get('/feed', (req, res) => {
     .catch((error) => res.status(404));
 });
 
-app.post('/create', (req, res) => {
-  (async () => {
-    let documentToCreate = {
-      id: req.body.id,
-      content_text: req.body.content_text,
-      image: req.body.image,
-      date_published: req.body.date_published,
-      url: req.body.attachments[0].url,
-      duration_in_seconds: req.body.attachments[0].duration_in_seconds,
-    };
+app.post('/create', async (req, res) => {
+  let documentToCreate = {
+    id: req.body.id,
+    content_text: req.body.content_text,
+    image: req.body.image,
+    date_published: req.body.date_published,
+    url: req.body.attachments[0].url,
+    duration_in_seconds: req.body.attachments[0].duration_in_seconds,
+    title: req.body.title,
+  };
 
-    try {
-      let data = await controllers.add(documentToCreate);
-      res.status(200).send('Document successfully added!');
-    } catch (err) {
-      res.send({ Error: err });
-    }
-  })();
+  try {
+    let data = await controllers.add(documentToCreate);
+    res.status(200).send('Document successfully added!');
+  } catch (err) {
+    res.send({ Error: err });
+  }
 });
 
-app.delete('/', (req, res) => {
-  (async () => {
-    try {
-      let data = await controllers.delete('1');
-      res.status(200).send('Document successfully delete!');
-    } catch (err) {
-      res.send({ Error: err });
-    }
-  })();
+app.delete('/', async (req, res) => {
+  try {
+    let data = await controllers.delete('1');
+    res.status(200).send('Document successfully delete!');
+  } catch (err) {
+    res.send({ Error: err });
+  }
 });
 
 app.listen(3000, () => console.log('Listening in port 3000!'));
