@@ -28,7 +28,7 @@ const PlayItem = ({ podcastInfo }) => {
       <DesCriptionContainer>
         <div>{podcastInfo.title}</div>
         <div>{podcastInfo.content_text}</div>
-        <Heart />
+        <Heart podcastInfo={podcastInfo} />
       </DesCriptionContainer>
     </ItemDiv>
   );
