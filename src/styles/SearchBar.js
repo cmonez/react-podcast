@@ -1,4 +1,12 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
+
+const SearchContainer = styled.div`
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 10px;
+`;
 
 const SearchBar = ({ search }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -8,21 +16,23 @@ const SearchBar = ({ search }) => {
   };
 
   return (
-    <form>
-      <label>
-        Search:
-        <input type="text" onChange={onChangeHandler} value={searchTerm} />
-      </label>
-      <input
-        type="submit"
-        value="Submit"
-        onClick={(e) => {
-          e.preventDefault();
-          console.log('Click?');
-          search(searchTerm);
-        }}
-      />
-    </form>
+    <SearchContainer>
+      <form>
+        <label>
+          Search for a JSON feed!:
+          <input type="text" onChange={onChangeHandler} value={searchTerm} />
+        </label>
+        <input
+          type="submit"
+          value="Submit"
+          onClick={(e) => {
+            e.preventDefault();
+            console.log('Click?');
+            search(searchTerm);
+          }}
+        />
+      </form>
+    </SearchContainer>
   );
 };
 
