@@ -24,7 +24,10 @@ const DesCriptionContainer = styled.div`
 const PlayItem = ({ podcastInfo, changePodcast }) => {
   return (
     <ItemDiv>
-      <Image src={podcastInfo.image} />
+      <Image
+        src={podcastInfo.image}
+        onClick={() => changePodcast(podcastInfo)}
+      />
       <DesCriptionContainer>
         <div>{podcastInfo.title}</div>
         <div>{podcastInfo.content_text}</div>
