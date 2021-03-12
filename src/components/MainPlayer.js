@@ -30,9 +30,6 @@ const Image = styled.img`
 `;
 
 const MainPlayer = ({ currentItemPlaying }) => {
-  // const [player, setPlayer] = useState(exampleData[0]);
-  // const [audio, setAudio] = useState(exampleData[0].attachments[0].url);
-
   return (
     <MainPlayerDiv>
       <ImageSubSection>

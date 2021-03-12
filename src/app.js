@@ -1,12 +1,12 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import exampleData from './example.js';
 import ReactDOM from 'react-dom';
-import GlobalStyle from './styles/globalstyles';
-import Container from './styles/MainContainer';
-import MainPlayer from './styles/MainPlayer';
-import PlayItem from './styles/PlayItem';
-import Footer from './styles/Footer';
-import SearchBar from './styles/SearchBar';
+import GlobalStyle from './components/globalstyles';
+import Container from './components/MainContainer';
+import MainPlayer from './components/MainPlayer';
+import PlayItem from './components/PlayItem';
+import Footer from './components/Footer';
+import SearchBar from './components/SearchBar';
 import axios from 'axios';
 
 const App = () => {
