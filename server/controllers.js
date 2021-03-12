@@ -9,4 +9,9 @@ module.exports = {
   async delete(id) {
     await PodcastEpisodes.deleteOne({ id: id });
   },
+
+  async grabAllDocuments() {
+    let data = await PodcastEpisodes.find({});
+    return data;
+  },
 };

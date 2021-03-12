@@ -19,6 +19,15 @@ app.get('/feed', async (req, res) => {
   }
 });
 
+app.get('/favorites', async (req, res) => {
+  try {
+    let data = await controllers.grabAllDocuments();
+    res.send({ data: data });
+  } catch (err) {
+    res.status(404);
+  }
+});
+
 app.post('/create', async (req, res) => {
   let documentToCreate = {
     id: req.body.id,
