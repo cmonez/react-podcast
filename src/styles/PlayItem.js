@@ -29,6 +29,7 @@ const PlayItem = ({ podcastInfo }) => {
         <div>{podcastInfo.title}</div>
         <div>{podcastInfo.content_text}</div>
         <Heart podcastInfo={podcastInfo} />
+        <PlayIcon height={'50px'} width={'50px'} />
       </DesCriptionContainer>
     </ItemDiv>
   );
