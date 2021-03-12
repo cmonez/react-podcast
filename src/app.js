@@ -29,12 +29,28 @@ const App = () => {
       });
   };
 
+  const grabFavoritePodcasts = () => {
+    axios.get('/favorites').then(({ data }) => {
+      console.log('Grabbed favorites?', data.data.length);
+      if (data.data.length > 0) {
+        console.log('in if', data.data[0]);
+        setCurrentItem(data.data[0]);
+        setFeed(data.data);
+      } else {
+        throw Error('No episodes saved!');
+      }
+    });
+  };
+
   return (
     <Fragment>
       <GlobalStyle />
       <h2>React Podcasts</h2>
       <Container>
-        <SearchBar search={searchJSONFeed} />
+        <SearchBar
+          searchJSONFeed={searchJSONFeed}
+          grabFavoritePodcasts={grabFavoritePodcasts}
+        />
         <MainPlayer currentItemPlaying={currentItem} />
         {feed.map((podcast) => {
           return (

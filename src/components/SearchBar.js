@@ -3,12 +3,14 @@ import styled from 'styled-components';
 
 const SearchContainer = styled.div`
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
   margin-bottom: 10px;
 `;
 
-const SearchBar = ({ search }) => {
+const FavoritesButton = styled.button``;
+
+const SearchBar = ({ searchJSONFeed, grabFavoritePodcasts }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const onChangeHandler = (event) => {
@@ -28,10 +30,17 @@ const SearchBar = ({ search }) => {
           onClick={(e) => {
             e.preventDefault();
             console.log('Click?');
-            search(searchTerm);
+            searchJSONFeed(searchTerm);
           }}
         />
       </form>
+      <FavoritesButton
+        onClick={() => {
+          grabFavoritePodcasts();
+        }}
+      >
+        Grab Favorite Pods!
+      </FavoritesButton>
     </SearchContainer>
   );
 };
