@@ -30,6 +30,12 @@ const Image = styled.img`
 `;
 
 const MainPlayer = ({ currentItemPlaying }) => {
+  let audioURL;
+  if (currentItemPlaying.attachments) {
+    audioURL = currentItemPlaying.attachments[0].url;
+  } else {
+    audioURL = currentItemPlaying.url;
+  }
   return (
     <MainPlayerDiv>
       <ImageSubSection>
@@ -39,7 +45,7 @@ const MainPlayer = ({ currentItemPlaying }) => {
         Now Playing:
         <h3>{currentItemPlaying.title}</h3>
         <p>{currentItemPlaying.content_text}</p>
-        <audio controls src={currentItemPlaying.attachments[0].url}></audio>
+        <audio controls src={audioURL}></audio>
       </SubSection>
     </MainPlayerDiv>
   );
