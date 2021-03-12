@@ -6,7 +6,7 @@ import Container from './styles/MainContainer';
 import MainPlayer from './styles/MainPlayer';
 import PlayItem from './styles/PlayItem';
 import Footer from './styles/Footer';
-
+import SearchBar from './styles/SearchBar';
 const App = () => {
   const [feed, setFeed] = useState(exampleData);
   const [currentItem, setCurrentItem] = useState(exampleData[0]);
@@ -16,6 +16,7 @@ const App = () => {
       <GlobalStyle />
       <h2>React Podcasts</h2>
       <Container>
+        <SearchBar />
         <MainPlayer currentItemPlaying={currentItem} />
         {feed.map((podcast) => {
           return (

@@ -29,12 +29,12 @@ const PlayItem = ({ podcastInfo, changePodcast }) => {
         onClick={() => changePodcast(podcastInfo)}
       />
       <DesCriptionContainer>
-        <div>{podcastInfo.title}</div>
+        <h2>{podcastInfo.title}</h2>
         <div>{podcastInfo.content_text}</div>
         <Heart podcastInfo={podcastInfo} />
         <PlayIcon
-          height={'50px'}
-          width={'50px'}
+          height={'30px'}
+          width={'30px'}
           handleClick={changePodcast}
           podcastInfo={podcastInfo}
         />
