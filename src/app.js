@@ -10,6 +10,7 @@ import Footer from './styles/Footer';
 const App = () => {
   const [feed, setFeed] = useState(exampleData);
   const [currentItem, setCurrentItem] = useState(exampleData[0]);
+
   return (
     <Fragment>
       <GlobalStyle />
@@ -17,7 +18,9 @@ const App = () => {
       <Container>
         <MainPlayer currentItemPlaying={currentItem} />
         {feed.map((podcast) => {
-          return <PlayItem podcastInfo={podcast} />;
+          return (
+            <PlayItem podcastInfo={podcast} changePodcast={setCurrentItem} />
+          );
         })}
       </Container>
       <Footer />

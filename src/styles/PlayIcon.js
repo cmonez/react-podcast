@@ -1,8 +1,13 @@
 import React from 'react';
 
-const PlayIcon = ({ height, width }) => {
+const PlayIcon = ({ height, width, podcastInfo, handleClick }) => {
   return (
     <svg
+      onClick={() => {
+        // Change podcast
+        handleClick(podcastInfo);
+        console.log('Clicked?');
+      }}
       xmlns="http://www.w3.org/2000/svg"
       x="0"
       width={height}

@@ -21,7 +21,7 @@ const DesCriptionContainer = styled.div`
   font-size: 12px;
 `;
 
-const PlayItem = ({ podcastInfo }) => {
+const PlayItem = ({ podcastInfo, changePodcast }) => {
   return (
     <ItemDiv>
       <Image src={podcastInfo.image} />
@@ -29,7 +29,12 @@ const PlayItem = ({ podcastInfo }) => {
         <div>{podcastInfo.title}</div>
         <div>{podcastInfo.content_text}</div>
         <Heart podcastInfo={podcastInfo} />
-        <PlayIcon height={'50px'} width={'50px'} />
+        <PlayIcon
+          height={'50px'}
+          width={'50px'}
+          handleClick={changePodcast}
+          podcastInfo={podcastInfo}
+        />
       </DesCriptionContainer>
     </ItemDiv>
   );
