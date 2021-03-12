@@ -6,13 +6,13 @@ const HeartDiv = styled.div`
   display: inline-block;
 `;
 
-const Heart = ({ podcastInfo }) => {
+const Heart = ({ podcastInfo, handleClick }) => {
   const [isShown, setIsShown] = useState(true);
   const [isSaved, setIsSaved] = useState(false);
 
-  const favoritePodcast = () => {
+  const favoritePodcast = (payload) => {
     axios
-      .post('/create', podcastInfo)
+      .post('/create', payload)
       .then((response) => {
         console.log('Saved!');
       })
@@ -23,15 +23,15 @@ const Heart = ({ podcastInfo }) => {
     <HeartDiv
       onClick={(e) => {
         e.stopPropagation();
-        console.log('Clicked?');
-        favoritePodcast();
+        console.log('Clicked div?');
+        favoritePodcast(podcastInfo);
+        setIsSaved(!isSaved);
       }}
       onMouseEnter={() => {
-        console.log('enter'), favoritePodcast();
+        console.log('enter');
         setIsShown(false);
       }}
       onMouseLeave={() => setIsShown(true)}
-      onClick={() => setIsSaved(!isSaved)}
     >
       {isShown && !isSaved ? '♡' : '❤️'}
     </HeartDiv>
