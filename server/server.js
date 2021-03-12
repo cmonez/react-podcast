@@ -17,14 +17,14 @@ app.use(express.json());
 app.use(cors());
 app.use(express.static('public'));
 
-app.get('/feed', (req, res) => {
+app.get('/feed', async (req, res) => {
   let urlToSearch = req.query.url;
-  axios
-    .get(urlToSearch)
-    .then((data) => {
-      res.send({ data: data.data.items });
-    })
-    .catch((error) => res.status(404));
+  try {
+    let data = await axios.get(urlToSearch);
+    res.send({ data: data.data.items });
+  } catch (err) {
+    res.status(404);
+  }
 });
 
 app.post('/create', async (req, res) => {
