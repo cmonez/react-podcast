@@ -20,17 +20,15 @@ app.post('/create', (req, res) => {
   (async () => {
     let documentToCreate = {
       id: req.body.id,
-      content_html: req.body.content_html,
+      content_text: req.body.content_text,
       image: req.body.image,
       date_published: req.body.date_published,
       url: req.body.attachments[0].url,
       duration_in_seconds: req.body.attachments[0].duration_in_seconds,
     };
-    console.log('doc to create', documentToCreate);
-    // console.log('doc to create', req.body);
 
     try {
-      let data = await controllers.add(example);
+      let data = await controllers.add(documentToCreate);
       res.status(200).send('Document successfully added!');
     } catch (err) {
       res.send({ Error: err });
