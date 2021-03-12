@@ -7,6 +7,6 @@ module.exports = {
   },
 
   async delete(id) {
-    PodcastEpisodes.deleteOne({ id: id });
+    await PodcastEpisodes.deleteOne({ id: id });
   },
 };

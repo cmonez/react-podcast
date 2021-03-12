@@ -19,7 +19,18 @@ app.post('/', (req, res) => {
   (async () => {
     try {
       let data = await controllers.add(example);
-      res.status(200).send('Document added!');
+      res.status(200).send('Document successfully added!');
+    } catch (err) {
+      res.send({ Error: err });
+    }
+  })();
+});
+
+app.delete('/', (req, res) => {
+  (async () => {
+    try {
+      let data = await controllers.delete('1');
+      res.status(200).send('Document successfully delete!');
     } catch (err) {
       res.send({ Error: err });
     }
