@@ -3,14 +3,6 @@ const path = require('path');
 const controllers = require('./controllers');
 const cors = require('cors');
 const axios = require('axios');
-const example = {
-  id: 1,
-  content_html: 'ha',
-  image: 'ad',
-  date_published: 'as',
-  url: 'asd',
-  duration_in_seconds: 2,
-};
 
 const app = express();
 app.use(express.json());
@@ -42,7 +34,7 @@ app.post('/create', async (req, res) => {
     let data = await controllers.add(documentToCreate);
     res.status(200).send('Document successfully added!');
   } catch (err) {
-    res.send({ Error: err });
+    res.status(400).send({ Error: err });
   }
 });
 
