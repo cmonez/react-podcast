@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const SearchBar = () => {
+const SearchBar = ({ search }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const onChangeHandler = (event) => {
@@ -11,14 +11,17 @@ const SearchBar = () => {
     <form>
       <label>
         Search:
-        <input
-          type="text"
-          name="search"
-          onChange={onChangeHandler}
-          value={searchTerm}
-        />
+        <input type="text" onChange={onChangeHandler} value={searchTerm} />
       </label>
-      <input type="submit" value="Submit" />
+      <input
+        type="submit"
+        value="Submit"
+        onClick={(e) => {
+          e.preventDefault();
+          console.log('Click?');
+          search(searchTerm);
+        }}
+      />
     </form>
   );
 };

@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const controllers = require('./controllers');
 const cors = require('cors');
+const axios = require('axios');
 const example = {
   id: 1,
   content_html: 'ha',
@@ -15,6 +16,16 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use(express.static('public'));
+
+app.get('/feed', (req, res) => {
+  let urlToSearch = req.query.url;
+  axios
+    .get(urlToSearch)
+    .then((data) => {
+      res.send({ data: data.data.items });
+    })
+    .catch((error) => res.status(404));
+});
 
 app.post('/create', (req, res) => {
   (async () => {
