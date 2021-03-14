@@ -32,12 +32,10 @@ const App = () => {
   const grabFavoritePodcasts = () => {
     axios.get('/favorites').then(({ data }) => {
       console.log('Grabbed favorites?', data.data.length);
+      // set favorites only if they've been favorited
       if (data.data.length > 0) {
-        console.log('in if', data.data[0]);
         setCurrentItem(data.data[0]);
         setFeed(data.data);
-      } else {
-        throw Error('No episodes saved!');
       }
     });
   };

@@ -4,6 +4,7 @@ const controllers = require('./controllers');
 const cors = require('cors');
 const axios = require('axios');
 
+const PORT = 3000;
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -56,4 +57,4 @@ app.delete('/', async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log('Listening in port 3000!'));
+app.listen(PORT, () => console.log(`Listening in port ${PORT}!`));

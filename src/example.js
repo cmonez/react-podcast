@@ -1,0 +1,235 @@
+const exampleData = [
+  {
+    id: '972522792',
+    title: 'Dav\u00edd Versus Goliath',
+    content_text:
+      "Summer, 2004. The Olympics in Athens. The event? Men's basketball: U.S. versus Puerto Rico. And the whole world knows that Puerto Rico doesn't stand a chance. After all, the bigger, richer, imperial power always wins \u2014 right?",
+    content_html:
+      "<p>Summer, 2004. The Olympics in Athens. The event? Men's basketball: U.S. versus Puerto Rico. And the whole world knows that Puerto Rico doesn't stand a chance. After all, the bigger, richer, imperial power always wins \u2014 right?</p><img src='https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=972522792' />",
+    image:
+      'https://media.npr.org/assets/img/2021/03/01/pitirre-eagle-3k-px-wide_slide-f490dc7eae48584bfbccb35801e63c87b62426ed.jpg?s=1400',
+    date_published: '2021-03-03T00:08:14-05:00',
+    date_modified: '2021-03-03T11:05:00-05:00',
+    attachments: [
+      {
+        url:
+          'https://play.podtrac.com/npr-510312/edge1.pod.npr.org/anon.npr-mp3/npr/codeswitch/2021/03/20210302_codeswitch_labregafinal.mp3?orgId=1&d=2533&p=510312&story=972522792&t=podcast&e=972522792&size=0&ft=pod&f=510312&awCollectionId=510312&awEpisodeId=972522792',
+        mime_type: 'audio/mpeg',
+        size_in_bytes: {
+          0: '0',
+        },
+        duration_in_seconds: 2533,
+      },
+    ],
+  },
+  {
+    id: '956822681',
+    title: "'Payback's A B****'",
+    content_text:
+      "We're ending Black history month where we started it...talking about reparations. On this episode, we're joined by Erika Alexander and Whitney Dow, who have spent the past two years exploring how reparations could transform the United States \u2014 and all the struggles and possibilities that go along with that.",
+    content_html:
+      "<p>We're ending Black history month where we started it...talking about reparations. On this episode, we're joined by Erika Alexander and Whitney Dow, who have spent the past two years exploring how reparations could transform the United States \u2014 and all the struggles and possibilities that go along with that.</p><img src='https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=956822681' />",
+    image:
+      'https://media.npr.org/assets/img/2021/02/24/reparationsthebigpayback-logo-final3000x3000_custom-4e1bbc457e587fb123392d6d05db1a2286852133.jpg?s=1400',
+    date_published: '2021-02-26T00:02:00-05:00',
+    date_modified: '2021-02-26T11:43:00-05:00',
+    attachments: [
+      {
+        url:
+          'https://play.podtrac.com/npr-510312/edge1.pod.npr.org/anon.npr-mp3/npr/codeswitch/2021/02/20210225_codeswitch_cs_the_big_payback__-_final_mix.mp3?orgId=1&d=1761&p=510312&story=956822681&t=podcast&e=956822681&size=28127067&ft=pod&f=510312&awCollectionId=510312&awEpisodeId=956822681',
+        mime_type: 'audio/mpeg',
+        size_in_bytes: {
+          0: '28127067',
+        },
+        duration_in_seconds: 1761,
+      },
+    ],
+  },
+  {
+    id: '968359504',
+    title: 'A Shot In The Dark',
+    content_text:
+      'As the rollout of coronavirus vaccines unfolds, one big challenge for public health officials has been the skepticism many Black people have toward the vaccine. One notorious medical study \u2014 the Tuskegee experiment \u2014 has been cited as a reason. But should it be?',
+    content_html:
+      "<p>As the rollout of coronavirus vaccines unfolds, one big challenge for public health officials has been the skepticism many Black people have toward the vaccine. One notorious medical study \u2014 the Tuskegee experiment \u2014 has been cited as a reason. But should it be? </p><img src='https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=968359504' />",
+    image:
+      'https://media.npr.org/assets/img/2021/02/23/codeswitch_rev.baums6-toned_custom-0981432d6e965d3cf5adedd8324f9c89a5e30cb9.jpg?s=1400',
+    date_published: '2021-02-24T00:18:35-05:00',
+    date_modified: '2021-02-24T09:17:00-05:00',
+    attachments: [
+      {
+        url:
+          'https://play.podtrac.com/npr-510312/edge1.pod.npr.org/anon.npr-mp3/npr/codeswitch/2021/02/20210223_codeswitch_vaccines_full_mix_1110pm_ljd.mp3?orgId=1&d=1604&p=510312&story=968359504&t=podcast&e=968359504&size=25610889&ft=pod&f=510312&awCollectionId=510312&awEpisodeId=968359504',
+        mime_type: 'audio/mpeg',
+        size_in_bytes: {
+          0: '25610889',
+        },
+        duration_in_seconds: 1604,
+      },
+    ],
+  },
+  {
+    id: '968356643',
+    title: "Becoming 'Black Moses'",
+    content_text:
+      "Marcus Garvey was an immigrant, a firebrand, a businessman. He was viewed with deep suspicion by the civil rights establishment. He would also become one of the most famous and powerful Black visionaries of the 20th century. Our play-cousins at NPR's Throughline podcast went deep on how he became the towering (and often misunderstood) figure that he is.",
+    content_html:
+      "<p>Marcus Garvey was an immigrant, a firebrand, a businessman. He was viewed with deep suspicion by the civil rights establishment. He would also become one of the most famous and powerful Black visionaries of the 20th century. Our play-cousins at NPR's Throughline podcast went deep on how he became the towering (and often misunderstood) figure that he is.</p><img src='https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=968356643' />",
+    image:
+      'https://media.npr.org/assets/img/2021/02/16/final__wide-07af68b677140c63c9813cd3f98416d1213642c0.jpg?s=1400',
+    date_published: '2021-02-17T00:08:35-05:00',
+    date_modified: '2021-03-03T13:31:00-05:00',
+    attachments: [
+      {
+        url:
+          'https://play.podtrac.com/npr-510312/edge1.pod.npr.org/anon.npr-mp3/npr/codeswitch/2021/02/20210217_codeswitch_cs_garvey_final.mp3?orgId=1&d=3848&p=510312&story=968356643&t=podcast&e=968356643&size=61441197&ft=pod&f=510312&awCollectionId=510312&awEpisodeId=968356643',
+        mime_type: 'audio/mpeg',
+        size_in_bytes: {
+          0: '61441197',
+        },
+        duration_in_seconds: 3848,
+      },
+    ],
+  },
+  {
+    id: '964001303',
+    title: 'Black Kiss-tory',
+    content_text:
+      'Too often, Black history is portrayed as a story of struggle and suffering, completely devoid of joy. So we called up some romance novelists whose work focuses on Black history. They told us that no matter how hard the times, there has always been room for love.',
+    content_html:
+      "<p>Too often, Black history is portrayed as a story of struggle and suffering, completely devoid of joy. So we called up some romance novelists whose work focuses on Black history. They told us that no matter how hard the times, there has always been room for love.</p><img src='https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=964001303' />",
+    summary:
+      "This week, we called up some romance novelists whose work focuses on Black history\u2014just in time for Black History Month <em>and</em> Valentine's Day.",
+    image:
+      'https://media.npr.org/assets/img/2021/02/04/wild-rain---jacket-image_custom-78a34a7b7f80fc9967569e3db3eac807621dfc11.jpg?s=1400',
+    date_published: '2021-02-10T09:59:08-05:00',
+    date_modified: '2021-03-03T13:31:00-05:00',
+    attachments: [
+      {
+        url:
+          'https://play.podtrac.com/npr-510312/edge1.pod.npr.org/anon.npr-mp3/npr/codeswitch/2021/02/20210210_codeswitch_romance_final_mix_smm.mp3?orgId=1&d=1671&p=510312&story=964001303&t=podcast&e=964001303&size=26683413&ft=pod&f=510312&awCollectionId=510312&awEpisodeId=964001303',
+        mime_type: 'audio/mpeg',
+        size_in_bytes: {
+          0: '26683413',
+        },
+        duration_in_seconds: 1671,
+      },
+    ],
+  },
+  {
+    id: '960378979',
+    title: "Who's 'Black Enough' For Reparations?",
+    content_text:
+      "Black History Month is here, which means we're diving into big, sticky questions about what exactly it means to be Black. So this week on the show: Who is 'Black enough' for reparations? Because you know...we got some bills to pay.",
+    content_html:
+      "<p>Black History Month is here, which means we're diving into big, sticky questions about what exactly it means to be Black. So this week on the show: Who is 'Black enough' for reparations? Because you know...we got some bills to pay.</p><img src='https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=960378979' />",
+    image:
+      'https://media.npr.org/assets/img/2021/02/02/bharris-nprhighresfinal1-05c9c60850da27b47e624727092c4bf885a2c024.jpg?s=1400',
+    date_published: '2021-02-03T00:05:00-05:00',
+    date_modified: '2021-03-03T13:30:00-05:00',
+    attachments: [
+      {
+        url:
+          'https://play.podtrac.com/npr-510312/edge1.pod.npr.org/anon.npr-mp3/npr/codeswitch/2021/02/20210203_codeswitch_black_like_who_feb_2021_jk_final.mp3?orgId=1&d=2203&p=510312&story=960378979&t=podcast&e=960378979&size=35169363&ft=pod&f=510312&awCollectionId=510312&awEpisodeId=960378979',
+        mime_type: 'audio/mpeg',
+        size_in_bytes: {
+          0: '35169363',
+        },
+        duration_in_seconds: 2203,
+      },
+    ],
+  },
+  {
+    id: '960378925',
+    title: "Stepping Out Of The Shadow Of 'Killer King'",
+    content_text:
+      'For decades, residents of Compton and Watts in South Los Angeles had to rely on one particularly troubled hospital for their medical care. A new state-of-the-art hospital replaced it, but faced many of the same challenges: too few beds, too many patients who need serious help, not enough money. Then came the coronavirus.',
+    content_html:
+      "<p>For decades, residents of Compton and Watts in South Los Angeles had to rely on one particularly troubled hospital for their medical care. A new state-of-the-art hospital replaced it, but faced many of the same challenges: too few beds, too many patients who need serious help, not enough money. Then came the coronavirus. </p><img src='https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=960378925' />",
+    image:
+      'https://media.npr.org/assets/img/2021/01/26/lahospitalsurge-gaj12-edit_custom-021949564c72528d5277abca0ec7e183b1a62b4c.jpg?s=1400',
+    date_published: '2021-01-27T00:08:30-05:00',
+    date_modified: '2021-01-28T09:04:00-05:00',
+    attachments: [
+      {
+        url:
+          'https://play.podtrac.com/npr-510312/edge1.pod.npr.org/anon.npr-mp3/npr/codeswitch/2021/01/20210126_codeswitch_killerkingfinalmix.mp3?orgId=1&d=1182&p=510312&story=960378925&t=podcast&e=960378925&size=18885096&ft=pod&f=510312&awCollectionId=510312&awEpisodeId=960378925',
+        mime_type: 'audio/mpeg',
+        size_in_bytes: {
+          0: '18885096',
+        },
+        duration_in_seconds: 1182,
+      },
+    ],
+  },
+  {
+    id: '958316427',
+    title: 'The Last Four Years',
+    content_text:
+      "The Trump administration is coming to a close, but which elements of the Trump era are here to stay? We spoke to NPR's White House reporter, Ayesha Rascoe, about where we were when Donald Trump took office \u2014 and what he's left behind.",
+    content_html:
+      "<p>The Trump administration is coming to a close, but which elements of the Trump era are here to stay? We spoke to NPR's White House reporter, Ayesha Rascoe, about where we were when Donald Trump took office \u2014 and what he's left behind.</p><img src='https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=958316427' />",
+    image:
+      'https://media.npr.org/assets/img/2021/01/19/cs-ayesha-headshot_slide-1fe8efebc194f007ddce7ad175b4da30fca8d056.jpg?s=1400',
+    date_published: '2021-01-19T22:19:59-05:00',
+    date_modified: '2021-01-20T17:59:00-05:00',
+    attachments: [
+      {
+        url:
+          'https://play.podtrac.com/npr-510312/edge1.pod.npr.org/anon.npr-mp3/npr/codeswitch/2021/01/20210120_codeswitch_kd_full_ayesha_mix_134_pst_12021.mp3?orgId=1&d=1865&p=510312&story=958316427&t=podcast&e=958316427&size=29772966&ft=pod&f=510312&awCollectionId=510312&awEpisodeId=958316427',
+        mime_type: 'audio/mpeg',
+        size_in_bytes: {
+          0: '29772966',
+        },
+        duration_in_seconds: 1865,
+      },
+    ],
+  },
+  {
+    id: '955673514',
+    title: 'From The Fringe To The Capitol',
+    content_text:
+      'Like all of you, we are still trying to make sense of Wednesday, January 6, 2021. Because even after the past four years, there are still new iterations of WTF. So on this episode, we\'re talking police, "terrorism", and the symbols of white nationalism that made it to the floor of the Capitol.',
+    content_html:
+      "<p>Like all of you, we are still trying to make sense of Wednesday, January 6, 2021. Because even after the past four years, there are still new iterations of WTF. So on this episode, we're talking police, \"terrorism\", and the symbols of white nationalism that made it to the floor of the Capitol.</p><img src='https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=955673514' />",
+    image:
+      'https://media.npr.org/assets/img/2021/01/11/npr-cs-pro-trump-riots3_wide-b2c76bfb6be55c7a4d08fdf500834fb1de6c7295.jpg?s=1400',
+    date_published: '2021-01-13T01:18:00-05:00',
+    date_modified: '2021-01-13T18:02:00-05:00',
+    attachments: [
+      {
+        url:
+          'https://play.podtrac.com/npr-510312/edge1.pod.npr.org/anon.npr-mp3/npr/codeswitch/2021/01/20210113_codeswitch_attempted_coup_full_mix_1210am_et_ljd.mp3?orgId=1&d=1920&p=510312&story=955673514&t=podcast&e=955673514&size=30650334&ft=pod&f=510312&awCollectionId=510312&awEpisodeId=955673514',
+        mime_type: 'audio/mpeg',
+        size_in_bytes: {
+          0: '30650334',
+        },
+        duration_in_seconds: 1920,
+      },
+    ],
+  },
+  {
+    id: '953674992',
+    title: "Finding 'A Perfect Match'",
+    content_text:
+      "Two close friends both suffered from the same aggressive form of cancer. After years of treatment, one lived and the other died. And while many variables factored into what happened, the woman who survived \u2014 reporter Ibby Caputo \u2014 couldn't help wondering what role race had played in the outcome.",
+    content_html:
+      "<p>Two close friends both suffered from the same aggressive form of cancer. After years of treatment, one lived and the other died. And while many variables factored into what happened, the woman who survived \u2014 reporter Ibby Caputo \u2014 couldn't help wondering what role race had played in the outcome.</p><img src='https://media.npr.org/include/images/tracking/npr-rss-pixel.png?story=953674992' />",
+    image:
+      'https://media.npr.org/assets/img/2021/01/05/terika_ibby-cs-f2d40c0640a46ed48b52dfc05fbd75919c369f25.jpg?s=1400',
+    date_published: '2021-01-06T00:12:22-05:00',
+    attachments: [
+      {
+        url:
+          'https://play.podtrac.com/npr-510312/edge1.pod.npr.org/anon.npr-mp3/npr/codeswitch/2021/01/20210105_codeswitch_final_mix_perfect_match_kd_10520.mp3?orgId=1&d=1861&p=510312&story=953674992&t=podcast&e=953674992&size=29716254&ft=pod&f=510312&awCollectionId=510312&awEpisodeId=953674992',
+        mime_type: 'audio/mpeg',
+        size_in_bytes: {
+          0: '29716254',
+        },
+        duration_in_seconds: 1861,
+      },
+    ],
+  },
+];
+
+export default exampleData;
